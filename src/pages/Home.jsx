@@ -73,7 +73,8 @@ const Home = () => {
     // "https://res.cloudinary.com/dybryo15k/image/upload/v1701618843/Premium_Vector___Black_friday_super_sale__black_gifts_boxes_ywhhzr.jpg",
 
     "https://res.cloudinary.com/dybryo15k/image/upload/v1692797965/cld-sample-5.jpg",
-    "https://res.cloudinary.com/dybryo15k/image/upload/v1701619452/three_y1vivx.jpg",
+    // "https://res.cloudinary.com/dybryo15k/image/upload/v1701619452/three_y1vivx.jpg",
+    "https://res.cloudinary.com/dybryo15k/image/upload/v1701619243/Download_E-commerce_concept_Delivery_service_on_mobile_application_for_free_ynjdaw.jpg",
     "https://res.cloudinary.com/dybryo15k/image/upload/v1692805307/pexels-ekaterina-bolovtsova-6312277_latt3m.jpg",
     "https://res.cloudinary.com/dybryo15k/image/upload/v1701618843/Free_Vector___Neon_24_hours_open_signboard_kcrncx.jpg",
   ];
