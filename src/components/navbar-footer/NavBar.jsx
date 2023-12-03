@@ -11,7 +11,7 @@ const NavBar = () => {
     setMenuOpen(false);
   };
   return (
-    <nav className="fixed  top-[-3px] left-0 right-0 z-20 bg-white py-5 text-green-700  px-8 h-20 md:px-10 lg:px-16 flex items-center justify-between">
+    <nav className="fixed  top-[-3px] left-0 right-0 z-20 bg-white py-5 text-[#906044]  px-8 h-20 md:px-10 lg:px-16 flex items-center justify-between">
       <div>
         <p className=" text-[44px]  font-bold">NexTrend</p>
       </div>
@@ -32,10 +32,10 @@ const NavBar = () => {
         </button>
       </div>
       <div className=" flex items-center gap-5">
-        <button className=" border-green-700 border-2 rounded-3xl lg:block md:block hidden text-green-700 px-4 py-2 cursor-pointer no-underline transition-transform hover:scale-110 duration-300 ease-in">
+        <button className=" border-[#906044] border-2 rounded-3xl lg:block md:block hidden text-[#906044] px-4 py-2 cursor-pointer no-underline transition-transform hover:scale-110 duration-300 ease-in">
           Sign Up
         </button>
-        <button className="px-10 py-2 lg:block md:block hidden rounded-3xl bg-green-700 text-white no-underline transition-transform hover:scale-110 duration-300 ease-in">
+        <button className="px-10 py-2 lg:block md:block hidden rounded-3xl bg-[#906044] text-white no-underline transition-transform hover:scale-110 duration-300 ease-in">
           Login
         </button>
       </div>
@@ -63,13 +63,13 @@ const NavBar = () => {
           </button>
           <button
             onClick={closeMenu}
-            className=" border-green-700 border-2 rounded-3xl text-green-700 w-full py-2 block cursor-pointer no-underline transition-transform hover:scale-110 duration-300 ease-in"
+            className=" border-[#906044] border-2 rounded-3xl text-[#906044] w-full py-2 block cursor-pointer no-underline transition-transform hover:scale-110 duration-300 ease-in"
           >
             Sign Up
           </button>
           <button
             onClick={closeMenu}
-            className="w-full py-2 lg:hidden grid justify-center font-bold md:hidden cursor-pointer rounded-3xl bg-green-700 text-white no-underline transition-transform hover:scale-110 duration-300 ease-in"
+            className="w-full py-2 lg:hidden grid justify-center font-bold md:hidden cursor-pointer rounded-3xl bg-[#906044] text-white no-underline transition-transform hover:scale-110 duration-300 ease-in"
           >
             Login
           </button>
