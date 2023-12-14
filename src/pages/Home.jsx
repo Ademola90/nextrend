@@ -12,7 +12,7 @@ import ProductsTable from "../feartures/products/ProductsTable";
 import { Link } from "react-router-dom";
 // import { getProducts } from "../services/apiFirstProducts";
 
-const Home = () => {
+const Home = ({ token }) => {
   // useEffect(function () {
   //   getProducts().then((data) => console.log(data));
   // }, []);
@@ -80,6 +80,10 @@ const Home = () => {
   ];
   return (
     <div className=" px-8 md:px-10 lg:px-16 mt-20 mx-auto bg-black h-full text-white">
+      <p className="text-white text-center pt-2">
+        Welcome back, {token?.user?.user_metadata?.user_name || "Guest"}
+      </p>
+
       <div className=" lg:flex md:grid grid items-center gap-5 py-3">
         <div className=" lg:w-1/4 md:w-full w-full ">
           <HeroCard hero={hero} />
