@@ -19,6 +19,8 @@ const SignIn = ({ setToken }) => {
     password: "",
   });
 
+  const [showPassword, setShowPassword] = useState(false);
+
   console.log(formData);
 
   function handleChange(event) {
@@ -46,6 +48,11 @@ const SignIn = ({ setToken }) => {
       alert(error);
     }
   }
+
+  const toggleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <div className="flex items-center h-screen justify-center">
       <div className=" bg-[#ECBC76] w-1/2 h-full px-8 md:px-10 lg:px-16  ">
@@ -93,11 +100,23 @@ const SignIn = ({ setToken }) => {
             <label htmlFor="">Enter your Password</label>
             <input
               className=" h-[47px] w-full border-2 border-[#ECBC76] rounded-md"
-              type="password"
+              type={showPassword ? "text" : "password"}
               placeholder="Password"
               name="password"
               onChange={handleChange}
+              value={formData.password}
             />
+            <div className=" absolute right-0">
+              <div className=" border-2 border-black p-1 rounded-full relative grid justify-center items-center bottom-[37.5px] right-[25px]">
+                <button
+                  type="button"
+                  onClick={toggleShowPassword}
+                  className=" px-4 py-2 border border-[#ECBC76]  rounded-full "
+                >
+                  {showPassword ? "" : ""}
+                </button>
+              </div>
+            </div>
           </div>
           <div className=" flex justify-end items-center">
             <p className="text-[#906044]">Forgot Password</p>

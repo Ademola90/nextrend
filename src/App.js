@@ -15,6 +15,7 @@ import ConfirmationSuccess from "./components/ConfirmationSuccess/ConfirmationSu
 
 
 
+
 // FOR REACT QUERY TANSTACK
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -91,6 +92,7 @@ function App() {
           <Route path="/signup" element={<><SignUp /></>} />
           <Route path="/signin" element={<><SignIn setToken={setToken} /></>} />
           <Route path="/confirmation-success" element={<ConfirmationSuccess />} />
+
           <Route path="/appliance" element={<Layout><Appliance /></Layout>} />
 
           {/* <Route path='/' exact Component={Home} />
