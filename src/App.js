@@ -9,6 +9,7 @@ import Appliance from "./pages/Appliance";
 import SignUp from "./pages/SignUp";
 import Layout from "./components/routes/Layout";
 import SignIn from "./pages/SignIn";
+import ConfirmationSuccess from "./components/ConfirmationSuccess/ConfirmationSuccess";
 
 
 
@@ -89,6 +90,7 @@ function App() {
 
           <Route path="/signup" element={<><SignUp /></>} />
           <Route path="/signin" element={<><SignIn setToken={setToken} /></>} />
+          <Route path="/confirmation-success" element={<ConfirmationSuccess />} />
           <Route path="/appliance" element={<Layout><Appliance /></Layout>} />
 
           {/* <Route path='/' exact Component={Home} />

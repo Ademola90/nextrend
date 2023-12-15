@@ -6,6 +6,7 @@ import { createClient } from "@supabase/supabase-js";
 import { supabase } from "../services/supabase";
 
 const SignUp = () => {
+  let navigate = useNavigate();
   const supabase = createClient(
     process.env.REACT_APP_SUPABASE_URL,
     process.env.REACT_APP_ANON_KEY
@@ -43,57 +44,12 @@ const SignUp = () => {
       });
       if (error) throw error;
       alert("Check your email for verification link");
+      navigate("/confirmation-success");
+      // navigate("/signin");
     } catch (error) {
       alert(error);
     }
   }
-
-  // const navigate = useNavigate(); // Initialize useNavigate
-
-  // const [email, setEmail] = useState("");
-  // const [username, setUsername] = useState("");
-  // const [phoneNumber, setPhoneNumber] = useState("");
-  // const [password, setPassword] = useState("");
-
-  // const handleEmailChange = (e) => {
-  //   setEmail(e.target.value);
-  // };
-
-  // const handleUsernameChange = (e) => {
-  //   setUsername(e.target.value);
-  // };
-
-  // const handlePhoneNumberChange = (e) => {
-  //   setPhoneNumber(e.target.value);
-  // };
-
-  // const handlePasswordChange = (e) => {
-  //   setPassword(e.target.value);
-  // };
-
-  // const handleSignUp = async () => {
-  //   try {
-  //     const { user, session, error } = await supabase.auth.signUp({
-  //       email,
-  //       password,
-  //       username,
-  //       phone: phoneNumber,
-  //     });
-
-  //     if (error) {
-  //       console.error("Sign up error:", error);
-  //       // Handle error (e.g., show an error message)
-  //     } else {
-  //       console.log("User signed up:", user);
-  //       console.log("Session:", session);
-
-  //       // Redirect user to the home page or any other desired page
-  //       navigate("/home");
-  //     }
-  //   } catch (error) {
-  //     console.error("Unexpected error during sign up:", error);
-  //   }
-  // };
 
   return (
     <div className="flex items-center h-screen justify-center">
